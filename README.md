@@ -1,7 +1,7 @@
 ### Telecom
 >自动登录校园电信网
 
-exe文件于release中直接下载
+*exe文件于release中直接下载*
 
 [accession.py](https://github.com/Gc-Mall/Telecom/edit/main/accession.py)自动登录电信网
 
