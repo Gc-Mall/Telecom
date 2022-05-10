@@ -4,11 +4,14 @@ import json
 import os
 #将账户数据保存在函数中，来避免pyinstaller打包时文件依赖问题
 from telecom_account import telecom_account 
+from set_proxy import Proxy
 
 class Telecom():
     def __init__(self) -> None:
         """获取登录界面所需信息"""
-        ###针对已登录情况进行了优化
+        """针对已登录情况进行了优化"""
+        #windows代理设置,将123.123.123.123设置到代理名单之外
+        Proxy().set_proxy()
         check_url = 'http://123.123.123.123/'
         agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36'
         check_headers= {
