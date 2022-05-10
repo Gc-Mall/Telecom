@@ -85,7 +85,7 @@ os.path.abspath(".")
 file = open('telecom_account.txt')
 account = json.loads(file.read())
 file.close()
-account = telecom_account()
+
 Task_acce = Telecom()
 for key in account.keys():
     return_value = Task_acce.login(key, is_logout=False)
